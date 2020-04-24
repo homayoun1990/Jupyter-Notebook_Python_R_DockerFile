@@ -24,7 +24,7 @@ RUN conda install pip
 RUN conda install numpy
 
 RUN conda install scipy
-
+COPY requirements.txt ./
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
